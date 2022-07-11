@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="discription" content="Study page" />
+    <meta name="keywords" content="HTML, CSS, Javascript, React" />
+    <meta name="author" content="Anton Gavrus" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Об авторе</title>
   </head>
   <body>
@@ -48,5 +52,124 @@
     <br />
     &#128386;
     <a href="mailto:angavrus@inbox.ru">angavrus@inbox.ru</a>
+    <hr />
+    <h1>Lesson3</h1>
+    <img src="../image/oranges1.jpeg" alt="oranges" />
+    <ol>
+      <li>Знакомство с WEB</li>
+      <ul>
+        <li>Краткая история Web и как устроен интернет</li>
+        <li>Как устроен браузер и как он получает страницы по сети</li>
+        <li>Что такое Git</li>
+        <li>Создание первого репозитория</li>
+      </ul>
+      <li>HTML-вёрстка – первые шаги</li>
+      <ul>
+        <li>Настройка рабочей среды</li>
+        <li>Краткая история HTML</li>
+        <li>Типы тегов и атрибуты</li>
+        <li>Теги для работы с текстом</li>
+        <li>Создание собственной страницы</li>
+        <li>Основы ветвления в Git</li>
+        <li>Создание pull request на GitHub</li>
+      </ul>
+      <li>Погружение в HTML-разметку</li>
+      <ul>
+        <li>Мета-теги</li>
+        <li>Мнемоники</li>
+        <li>Теги для работы со списками</li>
+        <li>Теги для работы с таблицами</li>
+        <li>Теги для работы с формами</li>
+        <li>div и span</li>
+      </ul>
+    </ol>
+    <table border="1" width="50%">
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <th>&lt;table&gt</th>
+        <th>Defines a table</th>
+      </tr>
+      <tr>
+        <th>&lt;tr&gt</th>
+        <th>Defines a row in a table</th>
+      </tr>
+      <tr>
+        <th>&lt;th&gt</th>
+        <th rowspan="2">Defines a "header cell" / "cell" in a table</th>
+      </tr>
+      <tr>
+        <th>&lt;td&gt</th>
+      </tr>
+      <tr>
+        <th colspan="2">Rarely used</th>
+      </tr>
+      <tr>
+        <th>&lt;caption&gt</th>
+        <th>Defines a table caption</th>
+      </tr>
+      <tr>
+        <th>&lt;thead&gt</th>
+        <th>Groups the header content a table</th>
+      </tr>
+      <tr>
+        <th>&lt;tbody&gt</th>
+        <th>Groups the body content a table</th>
+      </tr>
+      <tr>
+        <th>&lt;tfoot&gt</th>
+        <th>Groups the footer content a table</th>
+      </tr>
+    </table>
+    <form method="get">
+    <fieldset>
+      <legend>My first form</legend>
+      <div>
+        <label for="name">Name</label><br>
+        <input id="name" required type="text" name="name" placeholder="Your name"><br>
+        <label for="email">Email</label><br>
+        <input id="email" required type="email" name="email" placeholder="Your email"><br>
+        <label for="password">Password</label><br>
+        <input id="password" required type="password" name="password" placeholder="Your password">
+      </div>
+      <label for="programming">Your programming level</label><br>
+      <input id="programming" name="english" required type="range" min="0" max="10">
+      <div>
+        <label>What does HTML stand for?</label><br>
+        <input id="qwe1" type="checkbox" name="question" value="1">
+        <label for="qwe1">Hyperlinks and Text Markup Language</label><br>
+        <input id="qwe2" type="checkbox" name="question" value="2">
+        <label for="qwe2">Home Tool Markup Language</label><br>
+        <input id="qwe3" type="checkbox" name="question" value="3">
+        <label for="qwe3">Hyper text Markup Language</label><br>
+      </div>
+      <div>
+        <label>What does HTTP stand for??</label><br>
+        <input id="qwe4" type="radio" name="question2" value="1">
+        <label for="qwe4">Hyper Text Translate Protocol</label><br>
+        <input id="qwe5" type="radio" name="question2" value="2">
+        <label for="qwe5">Hyper Text Transmission Protocol/label></label>><br>
+        <input id="qwe6" type="radio" name="question2" value="3">
+        <label for="qwe6">Hyper Text Transfer Protocol</label><br>
+      </div>
+      <div>
+        <label for="comment">Comment</label><br>
+        <textarea id="comment" name="comment" maxlength="500" placeholder="Your comment"></textarea>
+      </div>
+      <div>
+        <label for="select">What does HTML stand for?</label><br>
+        <select name="select" id="select">
+          <option value="1">Hyperlinks and Text Markup Language</option>
+          <option value="2">Home Tool Markup Language</option>
+          <option value="3">Hyper text Markup Language</option>
+        </select>
+      </div>
+      <p>
+        <button>Send</button>
+      </p>
+    </fieldset>
+    </form>
   </body>
 </html>
