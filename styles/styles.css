@@ -27,29 +27,36 @@
 }
 
 .col {
-    width: 300px;
-    height: 180px;
+    white-space: nowrap;
+    width: 25%;
+
     text-align: center;
     font-family: 'Roboto regular', sans-serif;
     font-size: 24px;
 }
 
-.footer {
-    width: 1440px;
+.icons {
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 30px;
+}
 
+
+.footer {
     margin: 0 auto;
     background: #10367C;
 }
 
 .menu-row {
+    max-width: 1440px;
     display: flex;
-    gap: 0 260px;
     padding: 120px 0 120px 105px;
     flex-wrap: wrap;
 }
 
 .menu-col {
     color: #FFFFFF;
+    width: 33.3333%;
     font-family: 'Roboto regular', sans-serif;
     font-size: 20px;
 }
