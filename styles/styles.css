@@ -49,6 +49,7 @@
 
 .menu-row {
     max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     padding: 120px 0 120px 105px;
     flex-wrap: wrap;
