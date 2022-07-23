@@ -1,0 +1,68 @@
+@import url('styles/fonts.css');
+
+.advantages {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 120px 16px 120px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Roboto medium', sans-serif;
+    font-size: 40px;
+}
+
+.line {
+    max-width: 1440px;
+    width: 100px;
+    height: 4px;
+    background: #f5bd41;
+    margin: 20px auto 85px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.col {
+    white-space: nowrap;
+    width: 25%;
+
+    text-align: center;
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 24px;
+}
+
+.icons {
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+
+.footer {
+    margin: 0 auto;
+    background: #10367C;
+}
+
+.menu-row {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 120px 0 120px 105px;
+    flex-wrap: wrap;
+}
+
+.menu-col {
+    color: #FFFFFF;
+    width: 33.3333%;
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 20px;
+}
+
+.menu-col-cope {
+    margin-top: 64px;
+    font-size: 14px;
+}
