@@ -1,5 +1,206 @@
 @import url('styles/fonts.css');
 
+/*TOP-SECTION*/
+
+.body {
+    box-sizing: border-box;
+    margin: 0;
+    flex-wrap: wrap;
+    overflow-x:hidden
+}
+
+.top-section-size {
+    width: 100%;
+    background-image: url("../triphouse-img/background.svg");
+    background-size:cover
+}
+
+.top-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    /*background-image: url("../triphouse-img/background.svg");*/
+    /*background-size: 100%;*/
+}
+.header {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    justify-content: space-between;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header-icons {
+    object-fit: none;
+}
+
+.header-text {
+    font-family: "Roboto regular", sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.logo {
+    max-height: 40px;
+    align-self: center;
+}
+
+.stays-and-line {
+    margin-left: 685px;
+}
+
+.stays {
+    margin-bottom: 12px;
+}
+
+.header-line {
+    width: 50px;
+    height: 4px;
+    background: #f5bd41;
+    margin-left: 5px;
+}
+
+.attractions {
+    padding: 0 48px 0 24px;
+}
+
+.night {
+    padding-right: 22px;
+    max-height: 32px;
+    align-self: center;
+}
+
+.account {
+    max-height: 40px;
+    align-self: center;
+}
+
+.page {
+    display: flex;
+    padding: 0 105px 0 105px;
+    margin: 0 auto;
+    max-width: 1230px;
+    flex-direction: column
+}
+
+.page2 {
+    display: flex;
+}
+
+.page-title {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: "Roboto medium", sans-serif;
+    white-space: nowrap;
+    width: 100vw;
+    margin: auto;
+}
+
+.page-form-title {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Roboto regular", sans-serif;
+    margin: 110px;
+    white-space: nowrap;
+}
+
+.search-size {
+    display: flex;
+    max-width: 1255px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.search {
+    max-width: 1255px;
+    margin: 145px 0 120px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.form {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Roboto regular", sans-serif;
+    height: 65px;
+    color: #000000;
+}
+
+.form1 {
+    border-radius: 8px;
+    border: hidden;
+}
+
+.form2 {
+    border-radius: 8px;
+    text-align: center;
+    border: hidden;
+    /*border: #F5BD41 solid 3px;*/
+}
+
+.form3 {
+    text-align: center;
+    align-self: normal;
+    border: hidden;
+}
+
+.form1-size {
+    width: 37%;
+    padding-right: 5px;
+}
+
+.form2-size {
+    width: 21%;
+    padding-right: 5px;
+}
+
+.form3-size {
+    width: 26%;
+}
+
+.button-size {
+    width: 16%;
+}
+
+.button {
+    width: 100%;
+    height: 67px;
+    color: #FFFFFF;
+    background: #3077C6;
+    border-radius: 8px;
+    border: hidden;
+    font-size: 24px;
+    font-family: "Roboto regular", sans-serif;
+    margin-left: 5px;
+}
+
+.download-icons {
+    max-width: 271px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.form3-button {
+    /*align-items: normal;*/
+}
+
+.form-titles {
+    position: absolute;
+    top: 560px;
+
+    display: block;
+    margin: 0 0 24px 24px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Roboto regular", sans-serif;
+}
+
+/*ADVANTAGES*/
+
 .advantages {
     width: 1440px;
     margin: 0 auto;
@@ -41,6 +242,7 @@
     margin-bottom: 30px;
 }
 
+/*FOOTER*/
 
 .footer {
     margin: 0 auto;
