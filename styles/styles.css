@@ -6,10 +6,10 @@
     box-sizing: border-box;
     margin: 0;
     flex-wrap: wrap;
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 
-.top-section-size {
+.top-section__size {
     width: 100%;
     background-image: url("../triphouse-img/background.svg");
     background-size:cover
@@ -21,7 +21,7 @@
     /*background-image: url("../triphouse-img/background.svg");*/
     /*background-size: 100%;*/
 }
-.header {
+.top-section__header {
     display: flex;
     padding-top: 50px;
     padding-bottom: 200px;
@@ -30,22 +30,24 @@
     margin: 0 auto;
 }
 
-.header-icons {
+.header__icons {
     object-fit: none;
+
 }
 
-.header-text {
+.header__text {
     font-family: "Roboto regular", sans-serif;
     font-size: 24px;
     color: #FFFFFF;
 }
 
 .logo {
-    max-height: 40px;
+    height: 40px;
+    width: 205px;
     align-self: center;
 }
 
-.stays-and-line {
+.header__stays-line {
     margin-left: 685px;
 }
 
@@ -53,7 +55,7 @@
     margin-bottom: 12px;
 }
 
-.header-line {
+.header__line {
     width: 50px;
     height: 4px;
     background: #f5bd41;
@@ -66,16 +68,18 @@
 
 .night {
     padding-right: 22px;
-    max-height: 32px;
+    height: 30px;
+    width: 30px;
     align-self: center;
 }
 
 .account {
-    max-height: 40px;
+    height: 40px;
+    width: 40px;
     align-self: center;
 }
 
-.page {
+.top-section__page {
     display: flex;
     padding: 0 105px 0 105px;
     margin: 0 auto;
@@ -83,11 +87,7 @@
     flex-direction: column
 }
 
-.page2 {
-    display: flex;
-}
-
-.page-title {
+.top-section__title {
     font-size: 50px;
     color: #FFFFFF;
     font-family: "Roboto medium", sans-serif;
@@ -96,22 +96,7 @@
     margin: auto;
 }
 
-.page-form-title {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: "Roboto regular", sans-serif;
-    margin: 110px;
-    white-space: nowrap;
-}
-
-.search-size {
-    display: flex;
-    max-width: 1255px;
-    width: 100%;
-    align-items: flex-end;
-}
-
-.search {
+.top-section__search {
     max-width: 1255px;
     margin: 145px 0 120px 0;
     display: flex;
@@ -120,6 +105,15 @@
     background-color: #FFFFFF;
     border-radius: 8px;
     white-space: nowrap;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.search__size {
+    display: flex;
+    max-width: 1255px;
+    width: 100%;
+    align-items: flex-end;
 }
 
 .form {
@@ -179,13 +173,18 @@
 }
 
 .download-icons {
-    max-width: 271px;
     margin: 0 auto;
     padding-bottom: 120px;
 }
 
-.form3-button {
-    /*align-items: normal;*/
+.google-play {
+    width: 135px;
+    height: 40px;
+}
+
+.app-store {
+    width: 120px;
+    height: 40px;
 }
 
 .form-titles {
@@ -207,13 +206,13 @@
     padding: 120px 16px 120px;
 }
 
-.title {
+.advantages__title {
     text-align: center;
     font-family: 'Roboto medium', sans-serif;
     font-size: 40px;
 }
 
-.line {
+.advantages__line {
     max-width: 1440px;
     width: 100px;
     height: 4px;
@@ -221,25 +220,35 @@
     margin: 20px auto 85px;
 }
 
-.row {
+.advantages__row {
     display: flex;
     gap: 16px;
     justify-content: center;
 }
 
-.col {
+.advantages__col {
     white-space: nowrap;
     width: 25%;
-
     text-align: center;
     font-family: 'Roboto regular', sans-serif;
     font-size: 24px;
 }
 
-.icons {
-    height: 100px;
-    background-size: cover;
-    margin-bottom: 30px;
+.icon-support {
+    height: 92px;
+    width: 76px;
+}
+.icon-communicate {
+    height: 84px;
+    width: 84px;
+}
+.icon-book {
+    height: 67px;
+    width: 100px;
+}
+.icon-guest {
+    height: 92px;
+    width: 84px;
 }
 
 /*FOOTER*/
@@ -249,7 +258,7 @@
     background: #10367C;
 }
 
-.menu-row {
+.footer__row {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -257,14 +266,14 @@
     flex-wrap: wrap;
 }
 
-.menu-col {
+.footer__col {
     color: #FFFFFF;
     width: 33.3333%;
     font-family: 'Roboto regular', sans-serif;
     font-size: 20px;
 }
 
-.menu-col-cope {
+.footer__cope {
     margin-top: 64px;
     font-size: 14px;
 }
