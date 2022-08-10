@@ -6,41 +6,49 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body class="body">
-  <div class="top-section-size">;
+  <div class="top-section__size">;
   <div class="top-section">
-    <div class="header">
-      <img class="header-icons logo" src="triphouse-img/logo_vector.png" alt="Triphouse" />
-      <div class="stays-and-line">
-        <p class="header-text stays">Stays</p>
-        <div class="header-line"></div>
+    <div class="top-section__header">
+      <svg class="header__icons logo">
+        <use href="./triphouse-img/sprite.svg#logo" />
+      </svg>
+      <div class="header__stays-line">
+        <p class="header__text stays">Stays</p>
+        <div class="header__line"></div>
       </div>
-      <p class="header-text attractions">Attractions</p>
-      <img class="header-icons night" src="triphouse-img/Night.png" alt="night-mode"/>
-      <img class="header-icons account" src="triphouse-img/AccountCircle.png" alt="login account"/>
+      <p class="header__text attractions">Attractions</p>
+      <svg class="header__icons night">
+        <use href="./triphouse-img/sprite.svg#night" />
+      </svg>
+      <svg class="header__icons account">
+        <use href="./triphouse-img/sprite.svg#account" />
+      </svg>
     </div>
-    <div class="page">
-      <h1 class="page-title">Discover stays<br>to live, work or just relax</h1>
-      <div class="search">
-        <div class="search-size">
-        <div class="form1-size">
-        <label class="form-titles" for="name">Yur destination or hotel name</label>
-        <input class="form form1" id="name" required type="text" name="name" placeholder="New-York">
+    <div class="top-section__page">
+      <h1 class="top-section__title">Discover stays<br>to live, work or just relax</h1>
+      <div class="top-section__search">
+        <div class="top-section__form-city">
+        <label class="form-city__title" for="name">Yur destination or hotel name</label>
+        <input class="top-section__form top-section__form-city--border" id="name" required type="text" name="name" placeholder="New-York">
         </div>
-        <div class="form2-size">
-        <label class="form-titles" for="name2">Check-in — Check-out</label>
-        <input class="form form2" id="name2" required type="text" name="name2" placeholder="Tue 15 Sept — Sat 19 Sept">
+        <div class="top-section__form-date-in">
+        <label class="form-city__title" for="name2">Check-in — Check-out</label>
+        <input class="top-section__form top-section__form-date-in--border" id="name2" required type="text" name="name2" placeholder="Tue 15 Sept — Sat 19 Sept">
         </div>
-        <div class="form3-size">
-        <input class="form form3" required type="text" name="name3" placeholder="Tue 15 Sept — Sat 19 Sept">
+        <div class="top-section__form-date-out">
+        <input class="top-section__form top-section__form-date-out--border" required type="text" name="name3" placeholder="Tue 15 Sept — Sat 19 Sept">
         </div>
-        <div class="button-size">
-          <button class="button">Search</button>
-        </div>
+        <div class="top-section__button--size">
+          <button class="top-section__button">Search</button>
         </div>
       </div>
-      <div class="download-icons">
-        <img src="triphouse-img/googleplay.png" alt="Download Google Play"/>
-        <img src="triphouse-img/appstore.png" alt="Download App store"/>
+      <div class="top-section__download-icons">
+        <svg class="top-section__google-play">
+          <use href="./triphouse-img/sprite.svg#google-play" />
+        </svg>
+        <svg class="top-section__app-store">
+          <use href="./triphouse-img/sprite.svg#app-store" />
+        </svg>
       </div>
     </div>
   </div>
@@ -49,53 +57,45 @@
   </div>
   </div>
     <div class="advantages">
-      <h1 class="title">What do we offer</h1>
-      <div class="line"></div>
-      <div class="row">
-        <div class="col">
-          <img
-            class="icons"
-            src="triphouse-img/vector1.png"
-            alt="Support 24/7"
-          />
+      <h1 class="advantages__title">What do we offer</h1>
+      <div class="advantages__line"></div>
+      <div class="advantages__row">
+        <div class="advantages__col">
+          <svg class="icon-support">
+            <use href="./triphouse-img/sprite.svg#vector1" />
+          </svg>
           <p>Support 24/7"</p>
         </div>
-        <div class="col">
-          <img
-            class="icons"
-            src="triphouse-img/vector2.png"
-            alt="Communicate directly"
-          />
+        <div class="advantages__col">
+          <svg class="icon-communicate">
+            <use href="./triphouse-img/sprite.svg#vector2" />
+          </svg>
           <p>Communicate directly</p>
         </div>
-        <div class="col">
-          <img
-            class="icons"
-            src="triphouse-img/vector3.png"
-            alt="Book online"
-          />
+        <div class="advantages__col">
+          <svg class="icon-book">
+            <use href="./triphouse-img/sprite.svg#vector3" />
+          </svg>
           <p>Book online</p>
         </div>
-        <div class="col">
-          <img
-            class="icons"
-            src="triphouse-img/vector4.png"
-            alt="Real guest reviews"
-          />
+        <div class="advantages__col">
+          <svg class="icon-guest">
+            <use href="./triphouse-img/sprite.svg#vector4" />
+          </svg>
           <p>Real guest reviews</p>
         </div>
       </div>
     </div>
     <div class="footer">
-      <div class="menu-row">
-        <div class="menu-col">
+      <div class="footer__row">
+        <div class="footer__col">
           <p>About</p>
           <p>How Triphouse works</p>
           <p>Careers</p>
           <p>Privacy</p>
           <p>Terms</p>
         </div>
-        <div class="menu-col">
+        <div class="footer__col">
           <p>Property types</p>
           <p>Guest houses</p>
           <p>Hotels</p>
@@ -104,12 +104,12 @@
           <p>Holiday homes</p>
           <p>Hostels</p>
         </div>
-        <div class="menu-col">
+        <div class="footer__col">
           <p>Support</p>
           <p>Contact Customer Service</p>
           <p>FAQ</p>
         </div>
-        <div class="menu-col menu-col-cope">
+        <div class="footer__col footer__cope">
           <p>&#169; 2020 Triphouse, Inc. All rights reserved</p>
         </div>
       </div>
