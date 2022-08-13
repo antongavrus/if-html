@@ -276,8 +276,10 @@
 }
 
 .footer__cope {
+    color: #FFFFFF;
     margin-top: 64px;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Roboto regular', sans-serif;
 }
 
 .footer__logo {
@@ -339,12 +341,22 @@
     .footer__logo {
         display: flex;
         justify-content: center;
+        padding-top: 40px;
         width: 98px;
         height: 19px;
     }
 
     .footer__menu {
         display: none;
+    }
+
+    .footer__col {
+        font-size: 15px;
+        text-decoration: underline #FFFFFF;
+    }
+
+    .footer__cope {
+        font-size: 12px;
     }
 
 }
