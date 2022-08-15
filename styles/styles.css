@@ -344,7 +344,11 @@
     .footer__logo {
         display: flex;
         justify-content: center;
+        padding-bottom: 25px;
         padding-top: 40px;
+    }
+
+    .footer__logo-svg {
         width: 98px;
         height: 19px;
     }
@@ -354,21 +358,29 @@
     }
 
     .footer__row {
-        padding: 40px 0 0 0
+        max-width: 275px;
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
     }
 
     .footer__col {
+        display: flex;
+        justify-content: center;
         gap: 16px;
         font-size: 15px;
+        font-family: 'Roboto regular', sans-serif;
         text-decoration: underline #FFFFFF;
-        padding-bottom: 32px;
+        white-space: nowrap;
     }
 
     .footer__cope {
         font-size: 12px;
         margin-top: 0;
-        padding-bottom: 40px;
-    }
+        padding-top: 5px;
+        padding-bottom: 28px;
+  }
 
 
 
