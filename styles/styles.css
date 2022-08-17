@@ -52,10 +52,21 @@
     color: #FFFFFF;
 }
 
+.logo-position {
+    align-self: center;
+}
+
+.night-position {
+    align-self: center;
+}
+
+.account-position {
+    align-self: center;
+}
+
 .logo {
     height: 40px;
     width: 205px;
-    align-self: center;
 }
 
 .header__stays-line {
@@ -81,18 +92,15 @@
     padding-right: 22px;
     height: 30px;
     width: 30px;
-    align-self: center;
 }
 
 .account {
     height: 40px;
     width: 40px;
-    align-self: center;
 }
 
 .top-section__page {
     display: flex;
-    padding: 0 105px 0 105px;
     margin: 0 auto;
     max-width: 1230px;
     flex-direction: column
@@ -116,7 +124,6 @@
     background-color: #FFFFFF;
     border-radius: 8px;
     white-space: nowrap;
-    width: 100%;
     align-items: flex-end;
 }
 
@@ -151,12 +158,27 @@
 }
 
 .top-section__form-date-in {
-    width: 21%;
+    width: 10.5%;
     padding-right: 5px;
 }
 
 .top-section__form-date-out {
-    width: 26%;
+    padding-right: 5px;
+    width: 10.5%;
+}
+
+.top-section__form-adult {
+    padding-right: 5px;
+    width: 8.66%;
+}
+
+.top-section__form-children {
+    padding-right: 5px;
+    width: 8.66%;
+}
+
+.top-section__form-room {
+    width: 8.66%;
 }
 
 .top-section__button--size {
@@ -294,6 +316,61 @@
     .col-mob-5 {width: 83.33%;}
     .col-mob-6 {width: 100%;}
 
+
+    /*TOP-SECTION*/
+
+    .top-section__header {
+        max-width: 330px;
+        display: flex;
+        padding: 0 0 50px 0;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .logo {
+        height: 24px;
+        width: 122px;
+    }
+
+    .top-section__title {
+        max-width: 330px;
+        font-size: 30px;
+        align-self: center;
+        color: #FFFFFF;
+        font-family: "Roboto medium", sans-serif;
+        white-space: nowrap;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .top-section__page {
+        padding: 0 105px 0 105px;
+
+    }
+
+    .top-section__search {
+        max-width: 1255px;
+        margin: 40px 0 40px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 8px;
+        white-space: normal;
+        align-items: flex-end;
+    }
+
+    .top-section__button--size {
+        max-width: 312px;
+        align-self: center;
+    }
+
+    .top-section__download-icons {
+        padding-bottom: 40px;
+    }
+
+
+    /*ADVANTAGES*/
 
     .advantages {
         max-width: 1440px;
