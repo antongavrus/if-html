@@ -43,7 +43,6 @@
 
 .header__icons {
     object-fit: none;
-
 }
 
 .header__text {
@@ -149,6 +148,24 @@
 .top-section__form-date-out--border {
     text-align: center;
     align-self: normal;
+    border: hidden;
+}
+
+.top-section__form-adult--border {
+    text-align: center;
+    align-self: normal;
+    border: hidden;
+}
+
+.top-section__form-children--border {
+    text-align: center;
+    align-self: normal;
+    border: hidden;
+}
+
+.top-section__form-room--border {
+    border-radius: 8px;
+    text-align: center;
     border: hidden;
 }
 
@@ -319,6 +336,8 @@
 
     /*TOP-SECTION*/
 
+
+
     .top-section__header {
         max-width: 330px;
         display: flex;
@@ -332,6 +351,10 @@
         width: 122px;
     }
 
+    .top-section__form {
+        height: 48px;
+    }
+
     .top-section__title {
         max-width: 330px;
         font-size: 30px;
@@ -341,34 +364,115 @@
         white-space: nowrap;
         width: 100vw;
         margin: auto;
+        padding-bottom: 32px;
     }
+
+
 
     .top-section__page {
         padding: 0 105px 0 105px;
 
     }
 
+    .top-section__search-background {
+        background-color: #f5bd41;
+        min-width: 328px;
+    }
+
     .top-section__search {
-        max-width: 1255px;
-        margin: 40px 0 40px 0;
+        min-width: 312px;
+        margin: 8px 8px 8px 8px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: rgba(0,0,0,0.5);
-        border-radius: 8px;
+        background-color: #f5bd41;
+        flex-wrap: wrap;
         white-space: normal;
         align-items: flex-end;
+
     }
 
-    .top-section__button--size {
-        max-width: 312px;
-        align-self: center;
+    .top-section__form-city {
+        padding-bottom: 8px;
     }
+
+    .top-section__form-date-in {
+        padding-right: 0;
+        padding-bottom: 8px;
+
+    }
+
+    .top-section__form-date-out {
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-adult {
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-children {
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-room {
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-city--border {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .top-section__form-date-in--border {
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-section__form-date-out--border {
+        width: 100%;
+        border-radius: 8px;
+        border: hidden;
+        padding: 0;
+
+    }
+
+    .top-section__form-adult--border {
+        border-radius: 8px;
+        border: hidden;
+        padding: 0;
+    }
+
+    .top-section__form-date-in :first-child {
+        border-right: 4px;
+    }
+
+    .top-section__form-date-out :last-child {
+        border-left: 4px;
+    }
+
+    .top-section__form-children--border {
+        padding: 0;
+
+    }
+
+    .top-section__form-room--border {
+        padding: 0;
+
+    }
+
 
     .top-section__download-icons {
         padding-bottom: 40px;
+        padding-top: 32px;
     }
 
+    .top-section__button {
+        margin: 0;
+    }
 
     /*ADVANTAGES*/
 
