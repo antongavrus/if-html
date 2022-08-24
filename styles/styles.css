@@ -182,27 +182,40 @@
 .top-section__form-date-in {
     /*width: 10.5%;*/
     padding-right: 5px;
-    max-width: 50%;
+    width: 50%;
 }
 
 .top-section__form-date-out {
     padding-right: 5px;
     /*width: 10.5%;*/
-    max-width: 130px;
+    width: 50%;
 }
 
 .top-section__form-adult {
     padding-right: 5px;
-    width: 8.66%;
+    width: 33%;
 }
 
 .top-section__form-children {
     padding-right: 5px;
-    width: 8.66%;
+    width: 33%;
 }
 
 .top-section__form-room {
-    width: 8.66%;
+    width: 33%;
+}
+
+
+.top-section__form-adult--header {
+    display: none;
+}
+
+.top-section__form-children--header {
+    display: none;
+}
+
+.top-section__form-room--header {
+    display: none;
 }
 
 .top-section__button--size {
@@ -226,11 +239,22 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 26%;
+    display: flex;
 }
 
 .container-50 {
     /*display: none;*/
     width: 21%;
+    display: flex;
+
+}
+
+.top-section__form-date-in--header {
+    display: none;
+}
+
+.top-section__form-date-out--header {
+    display: none;
 }
 
 .form-city__title {
@@ -256,6 +280,14 @@
 .top-section__app-store {
     width: 120px;
     height: 40px;
+}
+
+.page__line1 {
+    display: none;
+}
+
+.page__line2 {
+    display: none;
 }
 
 /*ADVANTAGES*/
@@ -402,8 +434,6 @@
         width: 24px;
     }
 
-
-
     .top-section__title {
         max-width: 330px;
         font-size: 30px;
@@ -415,8 +445,6 @@
         margin: auto;
         padding-bottom: 32px;
     }
-
-
 
     .top-section__page {
         padding: 0 105px 0 105px;
@@ -430,39 +458,92 @@
 
     .top-section__search {
         min-width: 312px;
-        margin: 8px 8px 8px 8px;
+        margin: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
         background-color: #f5bd41;
+        border: 8px solid #f5bd41;
+        border-radius: 0 0 0 0;
         flex-wrap: wrap;
-        white-space: normal;
-        align-items: flex-end;
-
     }
+
 
     .top-section__form-city {
         padding-bottom: 8px;
     }
 
+    .top-section__form-date-in--header {
+        display: block;
+        position: absolute;
+        top: 258px;
+        left: 120px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-date-out--header {
+        display: block;
+        position: absolute;
+        top: 258px;
+        left: 280px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-adult--header {
+        display: block;
+        position: absolute;
+        top: 314px;
+        left: 120px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-children--header {
+        display: block;
+        position: absolute;
+        top: 314px;
+        left: 222px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-room--header {
+        display: block;
+        position: absolute;
+        top: 314px;
+        left: 328px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+
+
     .top-section__form-date-in {
-        padding-right: 0;
+        padding-right: 4px;
         padding-bottom: 8px;
 
     }
 
     .top-section__form-date-out {
-        padding-right: 0;
+        padding-left: 4px;
         padding-bottom: 8px;
+        padding-right: 0;
     }
 
     .top-section__form-adult {
-        padding-right: 0;
+        padding-right: 0px;
         padding-bottom: 8px;
     }
 
     .top-section__form-children {
-        padding-right: 0;
+        padding-right: 4px;
         padding-bottom: 8px;
     }
 
@@ -528,6 +609,28 @@
         padding-bottom: 0;
         height: 48px;
     }
+
+    .page__line1 {
+        display: block;
+        position: absolute;
+        top: 330px;
+        left: 215px;
+        width: 1px;
+        height: 32px;
+        background: #BFBFBF;
+    }
+
+    .page__line2 {
+        display: block;
+        position: absolute;
+        top: 330px;
+        left: 321px;
+        width: 0.9px;
+        height: 32px;
+        background: #BFBFBF;
+    }
+
+
 
     /*ADVANTAGES*/
 
