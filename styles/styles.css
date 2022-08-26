@@ -43,7 +43,6 @@
 
 .header__icons {
     object-fit: none;
-
 }
 
 .header__text {
@@ -52,10 +51,25 @@
     color: #FFFFFF;
 }
 
+.logo-position {
+    align-self: center;
+}
+
+.night-position {
+    align-self: center;
+}
+
+.account-position {
+    align-self: center;
+}
+
+.burger-position {
+    display: none;
+}
+
 .logo {
     height: 40px;
     width: 205px;
-    align-self: center;
 }
 
 .header__stays-line {
@@ -73,7 +87,7 @@
     margin-left: 5px;
 }
 
-.attractions {
+.header__attractions {
     padding: 0 48px 0 24px;
 }
 
@@ -81,21 +95,18 @@
     padding-right: 22px;
     height: 30px;
     width: 30px;
-    align-self: center;
 }
 
 .account {
     height: 40px;
     width: 40px;
-    align-self: center;
 }
 
 .top-section__page {
     display: flex;
-    padding: 0 105px 0 105px;
     margin: 0 auto;
     max-width: 1230px;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .top-section__title {
@@ -115,8 +126,7 @@
     justify-content: center;
     background-color: #FFFFFF;
     border-radius: 8px;
-    white-space: nowrap;
-    width: 100%;
+    /*white-space: nowrap;*/
     align-items: flex-end;
 }
 
@@ -126,6 +136,7 @@
     font-family: "Roboto regular", sans-serif;
     height: 65px;
     color: #000000;
+
 }
 
 .top-section__form-city--border {
@@ -145,18 +156,66 @@
     border: hidden;
 }
 
+.top-section__form-adult--border {
+    text-align: center;
+    align-self: normal;
+    border: hidden;
+}
+
+.top-section__form-children--border {
+    text-align: center;
+    align-self: normal;
+    border: hidden;
+}
+
+.top-section__form-room--border {
+    border-radius: 8px;
+    text-align: center;
+    border: hidden;
+}
+
 .top-section__form-city {
     width: 37%;
     padding-right: 5px;
 }
 
 .top-section__form-date-in {
-    width: 21%;
+    /*width: 10.5%;*/
     padding-right: 5px;
+    width: 50%;
 }
 
 .top-section__form-date-out {
-    width: 26%;
+    padding-right: 5px;
+    /*width: 10.5%;*/
+    width: 50%;
+}
+
+.top-section__form-adult {
+    padding-right: 5px;
+    width: 33%;
+}
+
+.top-section__form-children {
+    padding-right: 5px;
+    width: 33%;
+}
+
+.top-section__form-room {
+    width: 33%;
+}
+
+
+.top-section__form-adult--header {
+    display: none;
+}
+
+.top-section__form-children--header {
+    display: none;
+}
+
+.top-section__form-room--header {
+    display: none;
 }
 
 .top-section__button--size {
@@ -173,6 +232,29 @@
     font-size: 24px;
     font-family: "Roboto regular", sans-serif;
     margin-left: 5px;
+}
+
+.container-33 {
+    /*display: none;*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 26%;
+    display: flex;
+}
+
+.container-50 {
+    /*display: none;*/
+    width: 21%;
+    display: flex;
+
+}
+
+.top-section__form-date-in--header {
+    display: none;
+}
+
+.top-section__form-date-out--header {
+    display: none;
 }
 
 .form-city__title {
@@ -198,6 +280,14 @@
 .top-section__app-store {
     width: 120px;
     height: 40px;
+}
+
+.page__line1 {
+    display: none;
+}
+
+.page__line2 {
+    display: none;
 }
 
 /*ADVANTAGES*/
@@ -294,6 +384,255 @@
     .col-mob-5 {width: 83.33%;}
     .col-mob-6 {width: 100%;}
 
+
+    /*TOP-SECTION*/
+
+
+
+    .top-section__header {
+        max-width: 330px;
+        display: flex;
+        padding: 0 0 50px 0;
+        justify-content: normal;
+        margin: 0 auto;
+    }
+
+    .logo {
+        height: 24px;
+        width: 122px;
+    }
+
+    .header__stays-line {
+        display: none;
+    }
+
+    .header__attractions {
+        display: none;
+    }
+
+    .night {
+        height: 16px;
+        width: 16px;
+        padding-left: 110px;
+        padding-right: 0;
+    }
+
+    .account {
+        height: 24px;
+        width: 24px;
+        padding-left: 16px;
+        padding-right: 0;
+    }
+
+    .burger-position {
+        display: block;
+        padding-left: 16px;
+    }
+
+    .burger {
+        height: 28px;
+        width: 24px;
+    }
+
+    .top-section__title {
+        max-width: 330px;
+        font-size: 30px;
+        align-self: center;
+        color: #FFFFFF;
+        font-family: "Roboto medium", sans-serif;
+        white-space: nowrap;
+        width: 100vw;
+        margin: auto;
+        padding-bottom: 32px;
+    }
+
+    .top-section__page {
+        padding: 0 105px 0 105px;
+
+    }
+
+    .top-section__search-background {
+        background-color: #f5bd41;
+        min-width: 328px;
+    }
+
+    .top-section__search {
+        min-width: 312px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f5bd41;
+        border: 8px solid #f5bd41;
+        border-radius: 0 0 0 0;
+        flex-wrap: wrap;
+    }
+
+
+    .top-section__form-city {
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-date-in--header {
+        display: block;
+        position: absolute;
+        top: 258px;
+        left: 120px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-date-out--header {
+        display: block;
+        position: absolute;
+        top: 258px;
+        left: 280px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-adult--header {
+        display: block;
+        position: absolute;
+        top: 314px;
+        left: 120px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-children--header {
+        display: block;
+        position: absolute;
+        top: 314px;
+        left: 222px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+    .top-section__form-room--header {
+        display: block;
+        position: absolute;
+        top: 314px;
+        left: 328px;
+        font-size: 12px;
+        font-family: 'Roboto regular', sans-serif;
+        color: #383838;
+    }
+
+
+
+    .top-section__form-date-in {
+        padding-right: 4px;
+        padding-bottom: 8px;
+
+    }
+
+    .top-section__form-date-out {
+        padding-left: 4px;
+        padding-bottom: 8px;
+        padding-right: 0;
+    }
+
+    .top-section__form-adult {
+        padding-right: 0px;
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-children {
+        padding-right: 4px;
+        padding-bottom: 8px;
+    }
+
+    .top-section__form-room {
+        padding-bottom: 8px;
+    }
+
+
+
+
+    .top-section__form-date-in--border {
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-section__form-date-out--border {
+        width: 100%;
+        border-radius: 8px;
+        border: hidden;
+        padding: 0;
+
+    }
+
+    .top-section__form-adult--border {
+        border-radius: 8px 0 0 8px;
+        border: hidden;
+        padding: 0;
+    }
+
+    .top-section__form-children--border {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .top-section__form-room--border {
+        padding: 0;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .top-section__download-icons {
+        padding-bottom: 40px;
+        padding-top: 32px;
+    }
+
+    .top-section__button {
+        margin: 0;
+        height: 48px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .form-city__title {
+        display: none;
+    }
+
+    .top-section__form {
+        height: 30px;
+        padding-top: 18px;
+    }
+
+    .top-section__form-city--border {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 48px;
+    }
+
+    .page__line1 {
+        display: block;
+        position: absolute;
+        top: 330px;
+        left: 215px;
+        width: 1px;
+        height: 32px;
+        background: #BFBFBF;
+    }
+
+    .page__line2 {
+        display: block;
+        position: absolute;
+        top: 330px;
+        left: 321px;
+        width: 0.9px;
+        height: 32px;
+        background: #BFBFBF;
+    }
+
+
+
+    /*ADVANTAGES*/
 
     .advantages {
         max-width: 1440px;
