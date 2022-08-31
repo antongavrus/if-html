@@ -72,23 +72,37 @@
     width: 205px;
 }
 
-.header__stays-line {
-    margin-left: 685px;
+.top-section__header-right {
+    display: flex;
 }
 
-.stays {
-    margin-bottom: 12px;
-}
-
-.header__line {
-    width: 50px;
-    height: 4px;
-    background: #f5bd41;
-    margin-left: 5px;
+.header__stays {
+    position: relative;
 }
 
 .header__attractions {
     padding: 0 48px 0 24px;
+    position: relative;
+}
+
+.stays:hover:after {
+    position: absolute;
+    top: 58px;
+    left: 5px;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #f5bd41;
+}
+
+.attractions:hover:after {
+    position: absolute;
+    top:58px;
+    left: 55px;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #f5bd41;
 }
 
 .night {
@@ -302,19 +316,24 @@
     text-align: center;
     font-family: 'Roboto medium', sans-serif;
     font-size: 40px;
+    position: relative;
 }
 
-.advantages__line {
+.advantages__title:after {
+    position: absolute;
+    top: 67px;
+    left: 670px;
+    content: "";
     width: 100px;
     height: 4px;
     background: #f5bd41;
-    margin: 20px auto 85px;
 }
 
 .advantages__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 120px;
 }
 
 .advantages__col {
@@ -340,6 +359,54 @@
 .icon-guest {
     height: 92px;
     width: 84px;
+}
+/*HOMES GUESTS LOVES*/
+
+.homes {
+    background-color: #EAF0F9;
+}
+
+.homes__title {
+    text-align: center;
+    font-family: 'Roboto medium', sans-serif;
+    font-size: 40px;
+    padding: 120px 0 105px 0;
+}
+
+.homes__row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-bottom: 122px;
+}
+
+.img-homes-name {
+    font-family: 'Roboto medium', sans-serif;
+    font-size: 24px;
+    color: #3077C6;
+}
+
+.img-homes-place {
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 24px;
+    color: #BFBFBF
+}
+
+.next {
+    position: absolute;
+    top: 128px;
+    left: 275px;
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.next-mob {
+    display: none;
+}
+
+.homes__col:last-child {
+    position: relative;
 }
 
 /*FOOTER*/
@@ -476,8 +543,8 @@
     .top-section__form-date-in--header {
         display: block;
         position: absolute;
-        top: 258px;
-        left: 120px;
+        top: -8px;
+        left: 8px;
         font-size: 12px;
         font-family: 'Roboto regular', sans-serif;
         color: #383838;
@@ -486,8 +553,8 @@
     .top-section__form-date-out--header {
         display: block;
         position: absolute;
-        top: 258px;
-        left: 280px;
+        top: -8px;
+        left: 11px;
         font-size: 12px;
         font-family: 'Roboto regular', sans-serif;
         color: #383838;
@@ -496,8 +563,8 @@
     .top-section__form-adult--header {
         display: block;
         position: absolute;
-        top: 314px;
-        left: 120px;
+        top: -8px;
+        left: 8px;
         font-size: 12px;
         font-family: 'Roboto regular', sans-serif;
         color: #383838;
@@ -506,8 +573,8 @@
     .top-section__form-children--header {
         display: block;
         position: absolute;
-        top: 314px;
-        left: 222px;
+        top: -8px;
+        left: 8px;
         font-size: 12px;
         font-family: 'Roboto regular', sans-serif;
         color: #383838;
@@ -516,8 +583,8 @@
     .top-section__form-room--header {
         display: block;
         position: absolute;
-        top: 314px;
-        left: 328px;
+        top: -8px;
+        left: 8px;
         font-size: 12px;
         font-family: 'Roboto regular', sans-serif;
         color: #383838;
@@ -528,27 +595,31 @@
     .top-section__form-date-in {
         padding-right: 4px;
         padding-bottom: 8px;
-
+        position: relative;
     }
 
     .top-section__form-date-out {
         padding-left: 4px;
         padding-bottom: 8px;
         padding-right: 0;
+        position: relative;
     }
 
     .top-section__form-adult {
         padding-right: 0px;
         padding-bottom: 8px;
+        position: relative;
     }
 
     .top-section__form-children {
         padding-right: 4px;
         padding-bottom: 8px;
+        position: relative;
     }
 
     .top-section__form-room {
         padding-bottom: 8px;
+        position: relative;
     }
 
 
@@ -613,8 +684,8 @@
     .page__line1 {
         display: block;
         position: absolute;
-        top: 330px;
-        left: 215px;
+        top: 8px;
+        left: 102px;
         width: 1px;
         height: 32px;
         background: #BFBFBF;
@@ -623,14 +694,20 @@
     .page__line2 {
         display: block;
         position: absolute;
-        top: 330px;
-        left: 321px;
+        top: 8px;
+        left: 104px;
         width: 0.9px;
         height: 32px;
         background: #BFBFBF;
     }
 
+    .header__stays {
+        display: none;
+    }
 
+    .header__attractions {
+        display: none;
+    }
 
     /*ADVANTAGES*/
 
@@ -644,6 +721,10 @@
         font-size: 28px;
         margin-top: 24px;
         margin-bottom: 35px;
+    }
+
+    .advantages__title:after {
+        display: none;
     }
 
     .advantages__line {
@@ -676,6 +757,54 @@
 
     .text-icons {
         margin-bottom: 0;
+    }
+
+    /*HOMES*/
+
+    .homes__title {
+        font-size: 28px;
+        padding: 40px 0 32px 0;
+    }
+
+    .img-homes1 {
+        height: 155px;
+        width: 155px;
+    }
+
+    .homes__row {
+        padding-bottom: 40px;
+    }
+
+    .img-homes-name {
+        font-size: 12px;
+        margin: 8px 0 4px 0;
+    }
+
+    .img-homes-place {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .homes__col {
+        position: relative;
+    }
+
+    .next-mob {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        top: 64px;
+        left: 141px;
+        display: block;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .homes__col-3 {
+        display: none;
+    }
+
+    .homes__col-4 {
+        display: none;
     }
 
     /*FOOTER*/
