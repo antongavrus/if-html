@@ -409,6 +409,142 @@
     position: relative;
 }
 
+/*DESTINATIONS*/
+
+.destinations {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.destinations__title {
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 120px 0 105px 0;
+}
+
+.destinations__menu {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.menu__text {
+    margin: 18.4px 0 18.4px 0;
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 24px;
+}
+
+.destinations__menu1 {
+    width: 192px;
+    height: 64px;
+    border: 0px solid;
+    background: #3077C6;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.destinations__menu2 {
+    width: 192px;
+    height: 64px;
+    border: 0px solid;
+    background: #F3F3F4;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.destinations__menu3 {
+    width: 238px;
+    height: 64px;
+    border: 0px solid;
+    background: #F3F3F4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.destinations__row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 49px;
+}
+
+.destinations__img-text {
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 24px;
+    color: #3077C6;
+    margin: 25px 0 0 0;
+}
+
+.next2 {
+    transform: rotate(90deg);
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.next2-con {
+    text-align: center;
+    margin-bottom: 121px;
+}
+
+.destinations__next {
+    display: none;
+}
+
+/*SIGN UP*/
+
+.signup {
+    max-width: 1230px;
+    margin: 0 auto;
+    background-color: #EAF0F9;
+}
+
+.cross {
+    width: 26px;
+    height: 26px;
+}
+
+.cross-cont {
+    text-align: right;
+    padding: 24px 24px 0 0;
+}
+
+.signup__content {
+    padding:  7px 0 52px 24px;
+    display: flex;
+}
+
+.user {
+    width: 86px;
+    height: 86px;
+}
+
+.signup__text {
+    padding-left: 24px;
+}
+
+.signup__title {
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 24px;
+    margin: 0 0 24px 0;
+}
+
+.signup__button {
+    width: 128px;
+    height: 48px;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    color: #3077C6;
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.signup__mob {
+    display: none;
+}
+
+
 /*FOOTER*/
 
 .footer {
@@ -805,6 +941,137 @@
 
     .homes__col-4 {
         display: none;
+    }
+
+    /*DESTINATIONS*/
+
+    .destinations__title {
+        font-size: 28px;
+        margin: 40px 0 32px 0;
+    }
+
+    .destinations__menu {
+        margin-bottom: 24px;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .menu__text {
+        margin: 6.5px 0 6.5px 0;
+        font-family: 'Roboto regular', sans-serif;
+        font-size: 19px;
+        text-: dsfds;
+    }
+
+    .destinations__menu1 {
+        width: 99px;
+        height: 32px;
+    }
+
+    .destinations__menu2 {
+        width: 99px;
+        height: 32px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 1px solid #F3F3F4;
+    }
+
+    .destinations__menu3 {
+        width: 99px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid #F3F3F4;
+    }
+
+    .destinations__img {
+        width: 156px;
+        height: 155px;
+        position: relative;
+
+    }
+
+    .destinations__col34 {
+        display: none;
+    }
+
+    .destinations__img-text {
+        font-size: 12px;
+        margin: 4px 0 0 0;
+    }
+
+    .destinations__row {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .destinations__col {
+        position: relative;
+    }
+
+    .next2-con {
+        display: none;
+    }
+
+    .destinations__next {
+        position: absolute;
+        display: block;
+        width: 28px;
+        height: 28px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        top: 64px;
+        left: 139px;
+    }
+
+    /*SIGN UP*/
+
+    .signup {
+        display: none;
+    }
+
+    .signup__mob {
+        display: flex;
+        max-width: 360px;
+        margin: 0 auto;
+        gap: 16px;
+        justify-content: center;
+        padding: 24px 0 24px 0;
+    }
+
+    .cross-cont__mob {
+        align-self: center;
+    }
+
+    .cross__mob {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .user-cont__mob {
+        align-self: center;
+    }
+
+    .user__mob {
+        width: 58px;
+        height: 58px;
+    }
+
+    .signup__text {
+        padding-left: 24px;
+    }
+
+    .signup__title__mob {
+        font-family: 'Roboto regular', sans-serif;
+        font-size: 12px;
+        margin: 0;
+        align-self: center;
+    }
+
+    .signup__install__mob {
+        color: #3077C6;
+        font-size: 12px;
+        font-family: "Roboto regular", sans-serif;
+        align-self: center;
     }
 
     /*FOOTER*/
